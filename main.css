@@ -14,3 +14,10 @@ p span {
 	background-color: black;
 	color: white;
 }
+
+a {
+	display: block;
+	margin-top: 30px;
+	font-size: 40px;
+	color: white;
+}
