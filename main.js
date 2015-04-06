@@ -9,10 +9,14 @@ $(document).ready(function(){
 		dataType: 'jsonp',
 		success: function (response) {
 			console.log(response.results.collection1);
+			var allTweetsCombined = '';
 			$.each(response.results.collection1, function(index, item){
 				$('#tweets-here-please').append('<span style="background-color:' + randomColor() + '">' + item.tweet + '</span>');
+				allTweetsCombined = allTweetsCombined + ' ' + item.tweet;
+				if(index === (response.results.collection1.length - 1)){
+					responsiveVoice.speak(allTweetsCombined, 'UK English Female');
+				}
 			});
-			
 		}
 	});
 });
