@@ -1,0 +1,16 @@
+body {
+	margin: 0;
+	padding: 50px;
+	background-image: url('https://scontent-ams.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/10518697_10154491723530322_7349182251010011933_n.jpg?oh=e0c28f5593f801efd7469ac477ba9ed3&oe=55BB6372');
+}
+
+p {
+	margin: 0;
+	font-size: 40px;
+}
+
+p span {
+	margin-right: 20px;
+	background-color: black;
+	color: white;
+}
