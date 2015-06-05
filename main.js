@@ -11,10 +11,10 @@ $(document).ready(function(){
 			console.log(response.results.collection1);
 			var allTweetsCombined = '';
 			$.each(response.results.collection1, function(index, item){
-				$('#tweets-here-please').append('<span style="color:' + randomColor() + '">' + item.tweet + '</span>');
-				// $('#tweets-here-please').append(' ' + item.tweet);
+				$('#tweets-here-please').append('<span style="color:' + randomColor() + '">' + item.property1 + '</span>');
+				// $('#tweets-here-please').append(' ' + item.property1);
 				console.log(index, response.results.collection1.length);
-				allTweetsCombined = allTweetsCombined + ' ' + item.tweet;
+				allTweetsCombined = allTweetsCombined + ' ' + item.property1;
 				if(index === (response.results.collection1.length - 1)){
 					responsiveVoice.speak(allTweetsCombined);
 				}
